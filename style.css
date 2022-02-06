@@ -1,0 +1,97 @@
+:root {
+	--genwidth: 850px ;
+	--navwidth: 175px ;
+	--fg: #ddd ;
+	--altfg: #ccc ;
+	--fgemph: white ;
+	--bg: #111 ;
+	--altbg: #333 ;
+	--emph: #333 ;
+	--bordercolor: #555 ;
+	--limish: #0e0 ;
+  --headerFontColor: #fff;
+}
+
+body {
+  margin: auto;
+	/* background: linear-gradient(indigo, darkslategray) fixed; */
+	background: url("sources/background_stars6.gif");
+}
+
+header h1{
+  font-size: 50px;
+  color: var(--headerFontColor);
+}
+
+a{
+  text-decoration: none;
+  color: #fff;
+}
+
+main {
+	margin: auto ;
+  width: 75%;
+	color: var(--fg) ;
+	background: var(--bg) ;
+	border: dashed 1px var(--bordercolor) ;
+	padding: 1em ;
+	border-radius: 20px ;
+}
+
+main img{
+  width: 450px;
+}
+
+.h2Whoami{
+  font-size: 45px;
+}
+
+.flexbox{
+  display: flex;
+  align-items: center;
+}
+
+.menuText{
+  text-align: center;
+  font-size: 22px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.topImage{
+  flex-grow:0;
+  flex-shrink:0;
+}
+
+dl{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+dt{
+  margin-left: 50px;
+}
+
+.bottomLine{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1em ;
+	border-radius: 20px ;
+  margin-top: 1%;
+  margin-left:auto;
+  margin-right:auto;
+  height:75px;
+  width: 75%;
+  background: var(--bg) ;
+  border: dashed 1px var(--bordercolor) ;
+}
+
+.bottomLine a{
+  margin: auto;
+}
+.bottomLine img{
+  margin: auto;
+}
