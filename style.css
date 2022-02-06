@@ -74,6 +74,10 @@ dt{
   margin-left: 50px;
 }
 
+dt:hover{
+	text-decoration: underline;
+}
+
 .bottomLine{
   display: flex;
   align-items: center;
