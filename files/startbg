@@ -1,0 +1,9 @@
+#!/bin/sh
+
+wall=$(find $HOME/media/Pictures/Wallpapers -type f | shuf -n 1)
+#wall=$HOME/media/Pictures/Wallpapers/her.png
+xwallpaper --zoom $wall
+wal -i $wall >/dev/null
+sed -i 'N;$!P;D' $HOME/.cache/wal/colors-wal-dwm.h
+(cd $HOME/.local/src/dwm && sudo make clean install>/dev/null)
+(cd $HOME/.local/src/dmenu && sudo make clean install>/dev/null)
